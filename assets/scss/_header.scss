@@ -1,0 +1,69 @@
+// header
+.header-tansparent{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.5);
+}
+
+.header{
+    background-color:$heading-color ;
+    
+    &__icon{
+        margin-left: 50px;
+        margin-top: 48px;
+        & a{
+            color: $black;
+            font-size: 16px;
+        }
+    }
+    &__menu{
+        & ul{
+            & li{
+                display: inline-block;
+                margin-left: 25px;
+                position: relative;
+                & a{
+                    color: $brown;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    padding: 50px 0;
+                    display: block;
+                }
+                &:hover{
+                    & > a{
+                        color: $theme-color;
+                    }
+                }
+                & ul.submenu{
+                    position: absolute;
+                    background: $black;
+                    width: 200px;
+                    top: 100%;
+                    left: 0;
+                    opacity: 0;
+                    visibility: hidden;
+                    & li{
+                        margin: 0;
+                        display: block;
+                        & a{
+                            padding: 10px, 12px;
+                            font-size: 13px;
+                            font-weight: 400;
+                        }
+                        // & ul.submenu{
+                        //     left: 100%;
+                        //     top: 0;
+                        // }
+                    }
+                    &:hover ul.submenu{
+                        opacity : 1;
+                        visibility: visible;
+                        top:100%;
+                    }
+                }
+            }
+        }
+    }
+}

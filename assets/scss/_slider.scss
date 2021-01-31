@@ -1,0 +1,43 @@
+.slider-height{
+    min-height: 550px;
+    background-position: center center;
+    background-size: cover;
+}
+
+.slider__content{
+    & h5{
+        color: $brown;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+    & h2{
+        font-size: 35px;
+        color: $brown;
+        font-weight: 300;
+        padding : 0 20px;
+    }
+}
+
+.slider-active{
+    & .slick-arrow{
+        position: absolute;
+        left:0;
+        top:50%;
+        background: none;
+        padding: 0;
+        border: 0;
+        color: $white;
+        font-size: 48px;
+        transform: translateY(-50%);
+        z-index: 9;
+    }
+    & .slick-next{
+        left: auto;
+        right: 20px;
+    }
+
+    & .slick-prev{
+        left: 20px;
+        right: auto;
+    }
+}

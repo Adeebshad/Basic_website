@@ -1,0 +1,17 @@
+// feature
+
+.feature{
+    &__thumb{
+
+    }
+
+    &__content{
+        & h3{
+            font-size: 20px;
+            font-weight: 700;
+        }
+        & p{
+
+        }
+    }
+}

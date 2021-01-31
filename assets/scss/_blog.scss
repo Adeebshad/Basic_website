@@ -1,0 +1,43 @@
+.blog{
+    &__img{
+
+    }
+    &__content{
+        padding: 40px 30px;
+        & .blog-title{
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.blog-meta{
+    & span{
+        font-size: 13px;
+        margin-right: 10px;
+        color: $body-text-color;
+        & a{
+            color: $theme-color;
+        }
+    }
+}
+
+.read-more{
+    border-top: 1px solid $black-soft;
+    padding-top: 25;
+    margin-top: 30;
+    & a {
+        font-weight: 700;
+        font-size: 13px;
+        color: $heading-color;
+        text-transform: uppercase;
+        & i{
+            position: relative;
+            top: 1px;
+        }
+         &:hover{
+             color: $theme-color;
+         }
+    }
+}

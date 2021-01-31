@@ -1,0 +1,50 @@
+.footer-widget{
+    & p{
+        color : $black;
+        padding-right: 15px;
+    }
+    & ul{
+        & li{
+            & a{
+                color : $black;
+            &:hover{
+                color: $theme-color;
+                }            
+            }
+            & span{
+                display: block;
+            }
+        }
+    }
+}
+
+.footer-widget-title{
+    font-size: 39px;
+    font-weight : 700;
+    margin-bottom: 25px;
+}
+
+.footer-logo{
+
+}
+
+.footer-social{
+    & a{
+        color: $white;
+        font-size: 15px;
+        height: 35px;
+        width: 35px;
+        text-align: center;
+        line-height: 35px;
+        background:$black;
+        display: inline-block;
+        border-radius: 100%;
+        margin: 0 2px;
+        padding-bottom: 10px;
+    }
+}
+
+
+// .team__thumb-info .team-social a {
+    
+// }
